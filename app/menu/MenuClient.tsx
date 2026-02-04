@@ -13,7 +13,7 @@ type MenuItem = {
 };
 
 const BASE_URL =
-  process.env.NEXT_PUBLIC_API_BASE || "http://localhost:5150";
+  process.env.NEXT_PUBLIC_API_BASE || "https://qrmenu-api-om05.onrender.com";
 
 const CATEGORY_ORDER = [
   "Kahvaltı",

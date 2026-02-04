@@ -12,7 +12,7 @@ type MenuItem = {
   description?: string | null;
 };
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_BASE || "http://localhost:5150";
+const BASE_URL = process.env.NEXT_PUBLIC_API_BASE || "https://qrmenu-api-om05.onrender.com";
 
 function normalize(s: string) {
   return (s || "").trim().toLowerCase();

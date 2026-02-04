@@ -137,7 +137,7 @@ export default function MenuPage() {
           <div className="flex items-center justify-between gap-3">
             <div>
               <h1 className="text-3xl font-extrabold">
-                101 CLUP
+                MERT
               </h1>
               <p className="text-xs text-stone-500 mt-1">
                 QR Menü • Güncel ürünler burada

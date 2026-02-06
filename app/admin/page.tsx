@@ -112,7 +112,7 @@ export default function AdminPage() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "X-Admin-Key": adminKey,
+        "X-Admin-Key": process.env.NEXT_PUBLIC_ADMIN_KEY!,
       },
       body: JSON.stringify({
         name: name.trim(),

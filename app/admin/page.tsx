@@ -109,20 +109,21 @@ export default function AdminPage() {
     if (err) return alert(err);
 
     const res = await fetch(`${BASE_URL}/api/Menu`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Admin-Key": process.env.NEXT_PUBLIC_ADMIN_KEY!,
-      },
-      body: JSON.stringify({
-        name: name.trim(),
-        price,
-        category: category.trim(),
-        isAvailable,
-        imageUrl: imageUrl.trim() || null,
-        description: description.trim() || null,
-      }),
-    });
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    "X-Admin-Key": adminKey,
+  },
+  body: JSON.stringify({
+    name: name.trim(),
+    price,
+    category: category.trim(),
+    isAvailable,
+    imageUrl: imageUrl.trim() || null,
+    description: description.trim() || null,
+  }),
+});
+
 
     if (!res.ok) {
       const msg = await res.text().catch(() => "");
